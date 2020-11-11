@@ -1,4 +1,4 @@
-# Spoken English To Written English Conversion system (s2wconversion)
+# Spoken English To Written English Conversion system
 
 * This repository contain library which convert spoken english like "Triple A" to written English like AAA or "Double A" to AA.
 * To use this library you have to simply install it using pip and write from conversion import conversion (See demo.py)
@@ -12,14 +12,10 @@
 * NumPy (>= 1.11.0) 
 * SpeechRecognition (>=3) 
 * Pyaudio 
-
-#### User installation
-
-If you already have a working installation of numpy and speech_recognition, the easiest way to install s2wconversion is using pip
-
-* pip install s2w 
-* pip install -i https://test.pypi.org/simple/ s2w
-
+#### Installation
+Clone the repo
+pip install -r requirements_dev.txt
+python setup.py
 #### Conversion 
 
 * conversion directory contain converion.py file which have spoken to written funtion as per above rules
@@ -39,13 +35,4 @@ If you already have a working installation of numpy and speech_recognition, the 
 * then it converts speech into written text usin Google Speech Recognition Services, having rules like "Triple A" is "AAA" etc
 * See conversion rule\rules.py file to checkout more rules like punctuations or different pos tags.
 
-#### Future implementations and contributions
-* This repo always open for open source contributions.
-* We can add some more pos tagging rules and implement it to our library.
-* Also we can use deep learning pos tagging for get better accuracy and add more grammer rules.
-* Can add some more abbrevations such as we can add rules for "AAAA", "AAAAA" etc.I think of quad a, pent a etc.
 
-
-#### LICENSE
-
-GNU General Public License v3.0 (gplv3)
